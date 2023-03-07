@@ -1,2 +1,2 @@
 # alien-wear
-:reddit: Reddit data pipeline.
+:alien: Reddit data pipeline.
