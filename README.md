@@ -3,7 +3,7 @@
 
 ### intial python3 setup
 
-- requires a python environment named `.venv`
+- requires a python environment named `.venv` in R project directory
 ```sh
 # create environment
 $ python -m pip install --upgrade pip
@@ -18,7 +18,7 @@ $ ./.venv/Scripts/activate
 # finish
 (.venv) $ deactivate
 ```
-- add reddit api keys to `.env` file
+- add reddit api keys to `.env` file in R project directory
 ```
 REDDIT_CLIENT_ID=xxxxxxxxxxx
 REDDIT_CLIENT_SECRET=xxxxxxxxxxxxx
