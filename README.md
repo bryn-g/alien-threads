@@ -1,7 +1,7 @@
 # alien-wear
 :alien: Reddit data pipeline.
 
-### intial python3 setup
+### initial python3 setup
 
 - requires a python environment named `.venv` in R project directory
 ```sh
