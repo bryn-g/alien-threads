@@ -10,7 +10,7 @@ $ python -m pip install --upgrade pip
 $ python -m venv ./.venv/
 
 # activate environment
-$ ./.venv/Scripts/activate
+$ source ./.venv/Scripts/activate
 
 # install required python modules
 (.venv) $ pip install -r requirements.txt --upgrade
