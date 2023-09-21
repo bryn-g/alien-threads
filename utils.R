@@ -7,17 +7,17 @@ library(tibble)
 library(tidyr)
 library(reticulate)
 
-# import python modules
-builtins <- import_builtins()
-pd <- import("pandas")
-prw <- import("praw")
-utils <- import_from_path("utils")
-
 # use python env
 use_virtualenv('./.venv', required = TRUE)
 
 # read env variables
 readRenviron(".env")
+
+# import python modules
+builtins <- import_builtins()
+pd <- import("pandas")
+prw <- import("praw")
+utils <- import_from_path("utils")
 
 # flatten df list columns
 flat_pd_df <- function(x, pd) {
@@ -45,3 +45,4 @@ str_comment_df <- function(df, df_users) {
     bind_cols(df_users |> select(author_name = name)) |>
     relocate("author_name", .after = "author_id")
 }
+

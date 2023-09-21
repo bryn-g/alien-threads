@@ -20,7 +20,7 @@ reddit <- prw$Reddit(client_id = Sys.getenv("REDDIT_CLIENT_ID"),
 ## 1. collect thread data
 
 # thread url
-url <- "https://www.reddit.com/r/***REMOVED***"
+url <- "https://www.reddit.com/r/xxxxxx/comments/xxxxxxx/xxxxxxxxxxxxxxxxxxxxxxxx/"
 
 # get submission
 submission <- reddit$submission(url = url)
@@ -32,9 +32,19 @@ comments <- submission$comments$list()
 
 # process users
 df_op_user <- pd$json_normalize(builtins$vars(submission$author))
+
 df_users <- map_dfr(
   comments,
-  function(x) as_tibble(pd$json_normalize(builtins$vars((x$author))))
+  function(x) {
+    y <- tryCatch({
+      as_tibble(pd$json_normalize(builtins$vars((x$author))))
+    }, error = function(e) {
+      cols <- c("`_listing_use_sort`", "name", "`_reddit`", "`_fetched`")
+      vals <- c(NA, NA_character_, list(NA), NA)
+      names(vals) <- cols
+      as_tibble(vals)
+    })
+  }
 )
 
 # process replies

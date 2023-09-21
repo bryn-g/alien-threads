@@ -21,7 +21,7 @@ def main():
     reddit = praw.Reddit(
         client_id=reddit_auth["client_id"],
         client_secret=reddit_auth["client_secret"],
-        user_agent=reddit_auth["client_ua"]"
+        user_agent=reddit_auth["client_ua"]
     )
     
     url = "https://www.reddit.com/r/xxxxxx/comments/xxxxxxx/xxxxxxxxxxxxxxxxxxxxxxxx/"
