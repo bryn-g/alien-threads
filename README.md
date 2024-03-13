@@ -1,7 +1,8 @@
 # alien-threads
 :alien: R project for the collection and creation of Reddit conversation thread networks. Uses the [PRAW](https://praw.readthedocs.io/en/stable/#package-info) Python module to access and collect data from the Reddit API via the R [reticulate](https://rstudio.github.io/reticulate/) package.
 
-This project is in an initial exploratory phase and does not yet have an interface or package. Future versions will see it formalised into an R package with expanded capabilities.
+> [!NOTE]
+> This project is in an initial exploratory phase and does not yet have an interface or package. Future versions will see it formalised into an R package with expanded capabilities.
 
 Perform the following steps after installing Python and R reticulate. 
 
