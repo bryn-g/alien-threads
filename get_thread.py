@@ -29,7 +29,6 @@ def main():
     
     submission.comments.replace_more(limit=None)
     
-    # comments = submission.comments
     df_rows = [[comment.parent_id, comment.id, comment.score, comment.created, comment.body] for comment in submission.comments.list()]
     df = pd.DataFrame(df_rows, columns=['Parent ID', 'Comment ID', 'Score', 'Created', 'Body'])
 
