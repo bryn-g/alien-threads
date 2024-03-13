@@ -1,5 +1,5 @@
 # alien-threads
-:alien: Project for the collection of reddit conversation threads using the PRAW python package from R.
+:alien: Project for the collection of reddit conversation threads by using the PRAW python package from R.
 
 ### initial python3 setup
 
