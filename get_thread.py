@@ -35,9 +35,7 @@ def main():
 
     df.to_csv('thread.csv')
 
-    for comment in submission.comments.list():
-        # print(comment.parent_id)
-        
+    for comment in submission.comments.list(): 
         n_replies = len(comment.replies)
         first_reply_id = comment.replies[0].id
         
