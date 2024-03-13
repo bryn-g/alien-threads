@@ -33,4 +33,4 @@ NON_INTERACTIVE_FILE=false
 
 ### Collecting Reddit threads
 
-1. Edit and use the `get_thread.R` script. Uses the URL for a Reddit thread `url <- "https://www.reddit.com/r/xxxxxx/comments/xxxxxxx/xxxxxxxxxxxxxxxxxxxxxxxx/"` in the following format.
+1. Edit and use the `get_thread.R` script. Uses raw URL's for Reddit threads specified by the following variable `url <- "https://www.reddit.com/r/xxxxxx/comments/xxxxxxx/xxxxxxxxxxxxxxxxxxxxxxxx/"`.
