@@ -1,5 +1,5 @@
-# alien-wear
-:alien: Reddit data pipeline.
+# alien-threads
+:alien: Project for the collection of reddit conversation threads using the PRAW python package from R.
 
 ### initial python3 setup
 
